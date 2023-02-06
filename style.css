@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.button {
+  border: none;
+  padding: 0.8 rem;
+  background: #0067ac;
+  border-radius: 30px;
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 2vh 0;
+  cursor: pointer;
+}
+.padding2 {
+  padding: 2rem;
+}
+.heading3 {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+header h1 span {
+  color: #0067ac;
+  margin: 2vh 0;
+}
+header .sub-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+}
+header .sub-menu img {
+  height: 1rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+  margin-top: 2vh;
+}
+header .sub-menu span {
+  margin-top: 2vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* section one css */
+.one .left {
+  padding: 2rem;
+}
+
+.one .left h1 {
+  font-size: 2rem;
+  color: #666666;
+}
+.one .left h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.one .left .feature {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 2vh 0;
+}
+.one .left .feature img {
+  height: 2rem;
+}
+.one .left .feature p {
+  font-size: 0.7rem;
+  margin-left: 1rem;
+}
+.one .right {
+  position: relative;
+}
+.one .right img {
+  height: auto;
+  width: 100%;
+}
+
+.two .left {
+  position: relative;
+}
+.two .left img {
+  height: auto;
+  width: 100%;
+}
+
+.background {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.one .right .foreground {
+  max-width: 90%;
+}
+
+.one .right .background {
+  right: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.two .left .background {
+  width: auto;
+  left: -30%;
+  height: 100%;
+  margin-left: 20%;
+}
+.two .left .foreground {
+  max-width: 90%;
+  margin-left: 0%;
+}
+.two .left .background {
+  width: 100%;
+  height: auto;
+  margin-left: -30%;
+}
+.two .right {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.two .right h3 {
+  color: #666666;
+  font-size: 2rem;
+}
+/* section three */
+.three {
+  text-align: center;
+}
+
+.three .offers .offer {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.three .offers .offer img {
+  height: auto;
+  width: 20%;
+  margin: auto;
+}
+.three .offers .offer h6 {
+  font-size: 1rem;
+}
+
+.four {
+  text-align: center;
+}
+.four .foods .food:hover {
+  background: #0067ac;
+  color: white;
+}
+.four .foods .food button:hover {
+  background: white;
+  color: black;
+  outline: none;
+}
+.four .foods .food {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  align-items: center;
+  border: 1px solid #666666;
+  border-radius: 16px;
+  padding: 0.8rem;
+}
+.four .foods .food img {
+  height: 50%;
+  width: 50%;
+}
+.four .foods .food span {
+  color: tomato;
+}
+.four .foods .food .price {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4vh;
+}
+
+footer {
+  height: 60vh;
+}
+footer .special-offer {
+  padding: 2rem;
+  text-align: center;
+}
+footer .special-offer h4 {
+  font-size: 1.6rem;
+}
+footer .special-offer input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .special-offer .input input {
+  padding: 0.8rem;
+  margin-top: 3vh;
+  width: 80%;
+  border-radius: 30px;
+  border: 1px solid #666666;
+}
+footer .details {
+  background: linear-gradient(to bottom, #bbdefb, #0067ac);
+  text-align: center;
+}
+footer .details .detail img {
+  height: 2rem;
+}
+footer .details .detail ul {
+  list-style: none;
+}
+footer .details .boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .details .detail h4 {
+  color: white;
+}
+footer .details .detail {
+  margin: 2vh 0;
+}
+footer .details .detail h1 {
+  padding-top: 3vh;
+}
+
+/* media queries */
+@media screen and (min-width: 700px) {
+  header .sub-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .one .left h1 {
+    font-size: 3rem;
+  }
+  .one .left h3 {
+    font-size: 1.2rem;
+    width: 70%;
+    line-height: 2rem;
+  }
+  .one .left .button {
+    width: 200px;
+    margin: 4vh 0;
+  }
+  .one .left .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .one .right .foreground {
+    max-width: 70%;
+    margin-left: 10%;
+  }
+  .two .left .foreground {
+    max-width: 70%;
+    margin-left: 10%;
+  }
+  .two .left .background {
+    width: 100%;
+    height: auto;
+    margin-left: -30%;
+  }
+  .two .right .button {
+    width: 30%;
+  }
+  .three {
+    background: url("./background2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .three .offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5vh 0;
+  }
+  .four .foods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .four .foods .food img {
+    height: 100%;
+    width: 50%;
+  }
+  .four .foods .food .button {
+    width: 62%;
+    height: 58%;
+  }
+  footer .details .boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    height: 15vh;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .one {
+    display: grid;
+    grid-template-columns: 40% auto;
+    position: relative;
+  }
+  .one .left .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    width: 60%;
+  }
+  .one .right .foreground {
+    position: relative;
+    margin-left: 35%;
+    top: -7%;
+    padding: 7%;
+  }
+  .one .right .background {
+    position: absolute;
+    margin-right: -7%;
+    top: -20%;
+    height: 100vh;
+    width: auto;
+    padding: 7%;
+  }
+
+  .one .right img {
+    height: auto;
+    width: 100%;
+  }
+
+  .two {
+    display: grid;
+    grid-template-columns: 60% auto;
+    height: 100vh;
+    align-items: center;
+  }
+  .two .left .background {
+    padding: 7%;
+    position: absolute;
+    top: -10%;
+    height: 100vh;
+    width: auto;
+    margin-left: -50%;
+  }
+  .two .left .foreground {
+    position: relative;
+    margin-left: -7%;
+    left: 0;
+    padding: 7%;
+  }
+
+  .three {
+    background: url("./background2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .three .offers {
+    width: 70%;
+    margin: 5vh auto;
+  }
+
+  .four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  .four .foods {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .four .all-button {
+    width: 10%;
+    height: 7%;
+    align-self: center;
+  }
+
+  footer {
+    position: relative;
+    display: grid;
+    margin-top: 20vh;
+  }
+  footer .special-offer {
+    width: 75%;
+    margin: auto;
+    border: 1px solid #666666;
+    border-radius: 50px;
+    position: absolute;
+    top: -30%;
+    justify-self: center;
+    background: white;
+    background-image: url("./background2.png");
+    background-size: cover;
+  }
+  footer .heading3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .special-offer .input {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+  }
+  footer .special-offer .input input {
+    border: none;
+  }
+  footer .button {
+    width: 7%;
+  }
+
+  footer .details {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+  }
+}
